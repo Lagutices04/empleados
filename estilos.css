@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Condensed:wght@700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -6,60 +7,67 @@ body {
     background-color: #f0f0f0;
 }
 
+header {
+    position: relative;
+    text-align: left;
+    padding: 20px;
+}
 
-
-
-
-.titulo1{
+.titulo1 {
     color: orange;
+    margin: 0;
 }
 
-
- #futuroaseo{
+#futuroaseo {
     position: absolute;
-    top: 10px; /* Ajusta la distancia desde la parte superior */
-    right: 10px; /* Ajusta la distancia desde la parte derecha */
-    max-width: 100%;
+    top: 10px;
+    right: 10px;
+    max-width: 100px; /* Ajusta el tamaño de la imagen */
     height: auto;
- 
 }
 
-
-#cv{
-    left: 10px;
-    max-width: 70%;
-    height: auto;
-   
-}
-
-.info{
-    background-color: aqua;
-    border-radius: 0cm;
-    width: 200px;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-h3{
-    text-align: center;
-
-}
-
-h4{
-    text-align: center;
-
-}
-h5{
-    text-align: center;
-}
-
-.contenedor-container, .info{
-    justify-content: center;
-    align-items: center;
+main {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px);
 }
+
+.info {
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#cv {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    max-width: 300px;
+    height: auto;
+}
+
+h3, h4, h5 {
+    text-align: center;
+}
+
+.contenedor-container, .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 
 
 
